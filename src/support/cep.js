@@ -13,7 +13,7 @@ const isValid = value => {
 const loadCep = value => {
   const cep = value.replace('-', '')
 
-  return axios.get(`http://viacep.com.br/ws/${cep}/json/`)
+  return axios.get(`https://viacep.com.br/ws/${cep}/json/`)
     .then(({ data }) => data)
 }
 
