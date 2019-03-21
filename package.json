@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "push": "push-dir --dir=dist --branch=gh-pages",
+    "release": "yarn run build && yarn run push",
+    "build": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.11.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
   }
