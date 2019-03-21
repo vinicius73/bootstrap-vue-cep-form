@@ -23,6 +23,15 @@
       @delete="onDelete"
       @edit="onEdit"
       v-bind="{ ceps, isLoading }" />
+    <hr>
+    <footer class="container text-center">
+        <b-button-group size="sm">
+          <b-button  variant="dark" href="https://vinicius73.dev/" target="_blank">@vinicius73</b-button>
+          <b-button class="text-red" href="https://github.com/vinicius73/bootstrap-vue-cep-form" target="_blank">
+            v{{ $options.version }}
+          </b-button>
+        </b-button-group>
+    </footer>
   </div>
 </template>
 
@@ -35,6 +44,7 @@ const original = ['04104-010', '04104-020', '04104-030', '04104-040', '04104-050
 
 export default {
   name: 'app',
+  version: process.env.VUE_APP_VERSION,
   data: () => ({
     error: false,
     isLoading: true,
