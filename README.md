@@ -1,5 +1,7 @@
 # bootstrap-vue-cep-form
 
+> https://vinicius73.github.io/bootstrap-vue-cep-form/index.html
+
 ## Project setup
 ```
 yarn install
